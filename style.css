@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: #960c20;
 
 }
 
@@ -50,3 +50,6 @@ li {
     border-right: 1px solid #bbb;
 }
 
+th {
+	background-color: #960c20;
+}
