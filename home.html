@@ -1,20 +1,21 @@
+<!DOCTYPE html>                                               <!–– doctument type ––>
+<html>                                                        
 
-<html>
-<html><head>
-<Title> World Cup 2018</title>
-</head> 
-<head> 
+<head>
 
-	<link rel="stylesheet" type="text/css" href="design/style.css"
+<Title> 
+	World Cup 2018                                            <!–– title ––>
+</title>
+ 
+	<link rel="stylesheet" type="text/css" href="style.css"   <!–– externally linked css file for styling ––>
 </head>
 
-<body 
+<body>	
+	<br>                                                          <!–– two breaks to create space between navigation bar and image ––>
+	<br>
+		<IMG SRC="images/pic1.jpeg" class=topimg>               <!–– homepage image ––>
 	
-<br>
-<br>
-	<IMG SRC="images/pic1.jpeg" class="center"> 
-	
-<ul>
+<ul>                                                          <!–– unordered list used for navigation bar ––>
   <li><a href= home.html>Home</a></li>
   <li><a href= Groups.html>Groups</a></li>
   <li><a href= Fixtures.html>Fixtures</a></li>
@@ -26,57 +27,88 @@
 
 <br></br>
 
-<table width= "100%"> 
-	<tr>
+<table class="tab1" width= "100%">                           <!–– Table for layout of homepage. Used to dispaly forms and a video ––>
+<tr>
 
-<th><font color=red> Who Will Win?: </font><BR>
-<input type="radio" name="winner" value="winner">Brazil<br>
-<input type="radio" name="winner" value="winner">Germany<br>
-<input type="radio" name="winner" value="winner">Spain<br>
-<input type="radio" name="winner" value="winner">Argentina<br>
-<input type="radio" name="winner" value="winner">Belgium<br>
-<input type="radio" name="winner" value="winner">France<br>
-<input type="radio" name="winner" value="winner">England<br>
-<input type="radio" name="winner" value="winner">Portugal<br>
-<input type="radio" name="winner" value="winner">Uruguay<br>
-Other: <INPUT TYPE="TEXT" NAME="Phone"
-SIZE="15" MAXLENGTH="12"><br><INPUT TYPE="submit" VALUE="Submit"><th>
+<th>
+<font color=red> Who Will Win?: </font><BR>              <!–– writing will be in red with font colour tag ––>
 
-	
+<form action="form.php" method="POST">                    <!–– form tag used to create form to gather data -->
+	<input type="radio" name="winner" >Brazil<br>             <!–– radio input type used to select answers ––>
+	<input type="radio" name="winner" >Germany<br>            <!–– the same name is used so only one answer can be selected ––>
+	<input type="radio" name="winner" >Spain<br>
+	<input type="radio" name="winner" >Argentina<br>
+	<input type="radio" name="winner" >Belgium<br>
+	<input type="radio" name="winner" >France<br>
+	<input type="radio" name="winner" >England<br>
+	<input type="radio" name="winner" >Portugal<br>
+	<input type="radio" name="winner" >Uruguay<br>
+	<input type="radio" name="winner" >Russia<br>
+	<input type="radio" name="winner" >Colombia<br>
+	<input type="radio" name="winner" >Croatia<br> 
+	<input type="radio" name="winner" >Poland<br>
+	<input type="radio" name="winner" >Denmark<br>
 
-	
-<th> <iframe width="560" height="315" src="https://www.youtube.com/embed/G7Y1M2532BI" frameborder="0" 
+<input type= "Submit" name="submit" value="Submit">         
+</form>	
+</ol>
+<th align=right> <iframe width="560" height="315" src="https://www.youtube.com/embed/G7Y1M2532BI" frameborder="5"     <!–– youtube video embedded with a border and fullscreen allowed  -->
 allow="autoplay; encrypted-media" allowfullscreen></iframe></th>
 
 
-<th> <h2>Members:</h2>
-<form action="">
+<th><span style="color:red">How well will England do? (check all that apply):</span>                <!–– writing will be in red -->
+<form action="form.php" method="POST">
 
-Log in:<br>
-<input type="password" name="psw">
-</form></th>
+<form>
+	<input type="checkbox" name=group> Get knocked out in group stage <br>                      <!-- checkbox is use to select answer -->
+	<input type="checkbox" name=group> Win group <br>                                           <!-- name is different for each option to allow multiple answers -->
+	<input type="checkbox" name=scorers>  Be top goal scorers of tournament <br>
+	<input type="checkbox" name=penalty> Get knocked in a penalty shootout <br>
+	<input type="checkbox" name=winners>  Win the World Cup <br>
+	<input type="checkbox" name=poorly> Play poorly <br>
+	<input type="checkbox" name=whooped> Whooped by Blegium <br>
+	<input type="checkbox"name=hooliganism> Disqualified thanks to hooliganism <br>
+
+<input type= "Submit" name="submit" value="Submit">
+
+</form>
 
 	</tr>
 	
 </table>
-
-
 	
-<center><h2>Subscribe:</h2></center>
+<form action="form.html" method="POST">                           <!–– posts info to a php -->
+	<th><h2>Subscribe:</h2>       
+	<form action="/action_page.php">
+	Name:<br>
+	<input type="text" name="firstname" placeholder="Your Name"><br><!-- input type is text to allow people to write their name -->
+	Email:<br>
+	<input type="text" name="email" placeholder="Your Email"> <br> <!-- Placeholder allows writing in the text box that dissapears once written in -->
+	<input type="submit" value="Submit">
+	<INPUT TYPE="RESET" VALUE="Reset"></th>                        <!-- reset value will delete whatever has been typed into the box -->
+</form>
 
-<center><form action="/action_page.php">
-  Name:<br>
-  <input type="text" name="firstname" value=""><br>
-  Email:<br>
-  <input type="text" name="lastname" value=""><br><br>
-  <input type="submit" value="Submit">
-  <INPUT TYPE="RESET" VALUE="Reset"><BR>
-</form>	</center>	
+<p id="para1">                                                     <!-- id allows it to be styled with css that only applies to itself -->
+
+<cite>                                                             <!-- cite used to cite a quote -->
+	"My father and I rarely saw eye to eye when I was growing up. We saw the 
+	world differently. It was only when we were both adults that we were able to share spectacles. However, football, and particularly the 
+	World Cup, was when we, enemy combatants, could traverse trenches and be together."
+</cite> - Rabih Alameddine
+</p>
+
+<hr>                                                           <!-- creates a line across the page -->
+
+<center>
+<footer> 
+
+	contact: <a href="mailto:jam2morse@yahoo.co.uk">jmorse@worldcupweb.com </a>    <!-- footer --> 
 	
-<center><br> 
-&COPY; James Morse
-</br></center>	
-	
+<br> 
+&COPY; James Morse 2018                                         <!-- copywrite image -->
+</br>
+</center>	
+</footer>
 </body>
 
 </html>

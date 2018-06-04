@@ -1,55 +1,108 @@
 body {
-	background-color: #960c20;
+	background-color: #f4a641;       /* The background colour for the body of every page is #f4a641 */
+	font-family: Book Antiqua;       /* the font for the body of every page is Book Antiqua unless overrided */
+}
 
+div{
+text-decoration: underline overline;     /*all div elements will have both an underline and a overline*/
+background-color: white;
 }
 
 p {
-    text-align: center;
-    color: white;
+    text-align: left;              /*aligns paragraphs to the left*/
+    color: white;                    /*all paragraphs are written in white*/ 
+	font-size:20px;                  /*font size, all paragraphs have a 20px size*/           
+	margin: 50px;                    /*margin of 50
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+#para1 {                          /*This id allows me to disern between different paragraphs and apply unique css to my <p> on the homepage*/
+	font-size:30px;
 }
+
+#para2 { 
+	font-size:20px;               /*this id allows me to only target the specific paragraph named "para 2"*/
+}
+.topimg {                        /*applies to the classes named "topimg" which in this case applies to 6 images*/  
+    width: 100%;                 /*100% image width*/
+}
+
 
 ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    list-style-type: none;    /*no style type for the navigation bar list*/   
+    margin: 0;                /*0 margin*/
+    padding: 0;               /*0 padding, this keeps the navigation bar where I want it*/
+    overflow: hidden;          /*overflowing content will be hidden*/
+    background-color: #333;     /* background colour will be #333*/
+	position: fixed;             /*position of the navigation bar is fixed at the top even when scrolling down the page*/
+    top: 0;                      /*0 space at the top*/
+    width: 100%;                  /*100% width of navigation bar*/
 }
 
 li {
-    float: left;
+    float: left;               /*floats the list to the left so that the top item of the list (home) is furthest left*/
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 82px;
-    text-decoration: none;
+    display: block;              /*block instead of inline making it thicker*/
+    color: white;               /*white text*/
+    text-align: center;         /*align text to the centre*/
+    padding: 14px 79px;         /*increase size of the menu options to cover entire nav bar*/       
 }
 
 li a:hover {
-    background-color: maroon;  <-- Change colour to maroon when the mouse hovers over
+    background-color: maroon;          /*Change colour to maroon when the mouse hovers over*/ 
+	border-right: 1px solid #bbb;      /* border right of each navigation icon on hover*/
+	border-left: 1px solid #bbb;        /* border left of each navigation icon on hover*/
 }
 
 
-li {
-    border-right: 1px solid #bbb;
+tr {
+    padding-top: 5px;           /*space at top of table row*/
+    padding-bottom: 12px;       /*space at bottom of table row*/
+    text-align: left;           /*align text to the left*/
+    background-color: #FFA500;  /*background colour of the table rows*/
+    color: white;               /*white text*/
 }
 
-th {
-	background-color: #960c20;
+td {
+	background-color: #f46842; /*background colour of table data*/
+	padding-bottom:0px            /*0 padding at the bottom*/
+	
+}
+
+.tab1 {
+	color: white;                       /* text in the table with the class "tab1" will have white text*/
+
+	}
+
+table {
+	border-collapse: collapse /* removes border between cells*/
+}
+
+table td:hover {background-color: maroon;}  /*changes colour to maroon when hovering over table data*/
+
+
+.fifa {
+    float: right;                           /* The image with the class "fifa" will float right of the text next to it*/
+}
+
+article {
+	font-size: 30px;                         /* font size of text inside article tag will be 30px */
+	color: white;                            /* colour of text inside article tag will be white */
+}
+#fixt {
+    font-family: arial;                     /* this id will result in arial font for the england fixture table*/
+    width: 100%;                            /*the table will span the width of the page */
+}
+
+#fixt td {                                 
+    padding: 8px;   	                   /* there will be padding of 8px in the td cells in table with id "fixt" */
+	Border: 2px solid #FFFFFF;             /* there will be a solid border of 2px and it will be white*/
+}
+
+#fixt th {
+    padding: 10px;                     /* There will be padding of 10px inside the th cells in table with id "fixt"*/  
+    background-color: #ff0008;         /* background colour of the table headers will be #ff0008*/
+	Border: 2px solid #FFFFFF;            /* there will be a solid border of 2px and it will be white*/
+	font-size: 30px;                      /* text in the th for table id "fixt" will have font size 30px*/
 }
